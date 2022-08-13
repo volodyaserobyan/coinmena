@@ -1,0 +1,52 @@
+.Trade {
+    width: 100%;
+    // height: calc(100vh - 78px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &-form {
+        width: 100%;
+        max-width: 450px;
+        display: flex;
+        flex-direction: column;
+
+        &__assets {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+            input {
+                margin-bottom: 20px;
+                padding: 8px 20px;
+                box-sizing: border-box;
+                outline: none;
+                border-radius: 5px;
+                border: 2px solid darkblue;
+                font-family: 'Poppins', sans-serif;
+            }
+            select {
+                padding: 8px 20px;
+                border-radius: 5px;
+                box-sizing: border-box;
+                border: 2px solid darkblue;
+                font-family: 'Poppins', sans-serif;
+                outline: none;
+            }
+        }
+
+        &__usd p{
+            font-family: 'Poppins', sans-serif;
+        }
+
+        &__btn {
+            padding: 8px;
+            background-color: darkblue;
+            font-family: 'Poppins', sans-serif;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+    }
+
+}

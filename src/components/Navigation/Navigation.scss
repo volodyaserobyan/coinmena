@@ -1,0 +1,58 @@
+.menu {
+    position: sticky;
+    z-index: 1;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    -webkit-box-shadow: 1px 1px 10px 0px rgba(0,0,0,0.44); 
+    box-shadow: 1px 1px 10px 0px rgba(0,0,0,0.44);
+    padding: 8px 32px;
+    box-sizing: border-box;
+}
+
+.Navigation {
+    height: 60px;
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &-content {
+        display: flex;
+        cursor: pointer;
+
+        &__item {
+            text-decoration: none;
+            margin-right: 15px;
+            font-size: 16px;
+            font-family: 'Poppins', sans-serif;
+        }
+    }
+
+    &-user {
+        &__btn {
+            padding: 8px;
+            background-color: darkblue;
+            font-family: 'Poppins', sans-serif;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+        }
+        &__existing {
+            display: flex;
+            align-items: center;
+            >button {
+                padding: 8px;
+            }
+            &__name {
+                font-size: 14px;
+                margin-right: 32px;
+                display: flex;
+                flex-direction: column;
+                font-family: 'Poppins', sans-serif;
+            }
+        }
+    }
+  }

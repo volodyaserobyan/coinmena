@@ -1,0 +1,114 @@
+.Home {
+  margin: 32px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &-table {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    table-layout: fixed;
+
+    caption {
+      font-size: 24px;
+      margin: 8px 0 12px;
+    }
+
+    tbody{
+      background-color: #a9b6ff;
+      font-family: 'Poppins', sans-serif;
+      transition: 0.33s;
+    }
+    tbody:nth-child(odd){
+      background-color: #b9c4ff;
+    }
+    tbody:hover{
+      background-color: #90a0ff;
+    }
+
+    tr {
+      border: 1px solid #ddd;
+      padding: 6px;
+    }
+    td {
+      padding: 10px;
+      text-align: center;
+    }
+    th {
+      font-size: 14px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    select {
+      border: none;
+      background-color: initial;
+      outline: none;
+    }
+  }
+
+  &-table__title {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    top: 75px;
+    padding-top: 10px;
+    background-color: #ffffff;
+  }
+    
+  &-table__block {
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &-table__item {
+    width: 100%;
+    text-align: center;
+    list-style-type: none;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  &-btn {
+    padding: 4px 8px;
+    background-color: darkblue;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+  }
+
+  &__button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+  }
+
+  &-sort {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+    justify-content: flex-start;
+
+
+    >button {
+      margin-left: 8px;
+    }
+  }
+  
+}
